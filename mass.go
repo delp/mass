@@ -10,7 +10,7 @@ type Ask struct {
 	Contact       string
 	Key           string
 	ID            string
-	TimeToLive    int64 //TTL in seconds
+	TimeToLive    time.Duration
 	DateRequested time.Time
 	DateFulfilled time.Time
 }
@@ -23,5 +23,5 @@ type Offer struct {
 	Contact     string
 	Key         string
 	ID          string
-	TimeToLive  int64 //TTL in seconds
+	TimeToLive  time.Duration
 }
